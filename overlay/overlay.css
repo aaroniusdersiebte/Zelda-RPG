@@ -1,0 +1,305 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: transparent;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  overflow: visible;
+  width: 1280px;
+  height: 200px;
+  color: #fff;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ── HUD Strip ─────────────────────────────────────────────── */
+#hud {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 0 22px;
+  background: linear-gradient(180deg, rgba(13,13,20,0.94) 0%, rgba(13,13,20,0.80) 100%);
+  height: 72px;
+  width: 1240px;
+  border: 1px solid rgba(240,192,64,0.18);
+  border-radius: 10px;
+}
+
+/* ── Level ───────────────────────────────────────────────────── */
+#level-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 60px;
+  flex-shrink: 0;
+}
+#level-label {
+  font-size: 9px;
+  letter-spacing: 3px;
+  color: rgba(240,192,64,0.6);
+  text-transform: uppercase;
+}
+#level-number {
+  font-size: 36px;
+  font-weight: 900;
+  color: #f0c040;
+  line-height: 1;
+  text-shadow: 0 0 18px rgba(240,192,64,0.55);
+}
+#level-number.bump {
+  animation: levelBump 0.5s cubic-bezier(0.34,1.56,0.64,1);
+}
+@keyframes levelBump {
+  0%   { transform: scale(1); }
+  45%  { transform: scale(1.7); color: #fff; text-shadow: 0 0 50px #f0c040; }
+  100% { transform: scale(1); }
+}
+#level-number.levelup-pending {
+  animation: levelPulse 0.9s ease-in-out infinite;
+}
+@keyframes levelPulse {
+  0%, 100% { text-shadow: 0 0 10px rgba(240,192,64,0.4); color: #f0c040; }
+  50%       { text-shadow: 0 0 40px rgba(240,192,64,1), 0 0 80px rgba(240,192,64,0.5); color: #fff8d0; }
+}
+
+/* ── Divider ─────────────────────────────────────────────────── */
+.hud-divider {
+  width: 1px;
+  height: 40px;
+  background: rgba(240,192,64,0.13);
+  flex-shrink: 0;
+}
+
+/* ── XP Bar ──────────────────────────────────────────────────── */
+#xp-section {
+  flex: 1;
+  min-width: 0;
+}
+#xp-bar-track {
+  height: 10px;
+  background: rgba(255,255,255,0.07);
+  border-radius: 5px;
+  overflow: hidden;
+}
+#xp-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #c8920a, #f0c040, #ffe680);
+  border-radius: 5px;
+  transition: width 600ms cubic-bezier(0.4,0,0.2,1);
+  position: relative;
+  overflow: hidden;
+}
+#xp-bar-fill.drain { transition: width 800ms ease-in; }
+#xp-bar-fill::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.38) 50%, transparent);
+  animation: shimmer 2s linear infinite;
+}
+@keyframes shimmer {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(300%); }
+}
+
+/* ── Streak ──────────────────────────────────────────────────── */
+#streak-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 110px;
+  flex-shrink: 0;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.35s, transform 0.35s cubic-bezier(0.34,1.56,0.64,1);
+}
+#streak-section.visible { opacity: 1; transform: scale(1); }
+
+#streak-top {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  line-height: 1;
+}
+#streak-flame {
+  font-size: 18px;
+  transition: transform 0.3s, filter 0.3s;
+}
+#streak-count {
+  font-size: 26px;
+  font-weight: 900;
+  color: #ff8c00;
+  text-shadow: 0 0 12px rgba(255,100,0,0.8);
+  line-height: 1;
+}
+#streak-xp {
+  font-size: 11px;
+  font-weight: 700;
+  color: rgba(255,200,80,0.85);
+  font-variant-numeric: tabular-nums;
+}
+#streak-xp.counting {
+  animation: xpCountPop 0.18s ease-out;
+}
+@keyframes xpCountPop {
+  50% { transform: scale(1.22); color: #ffe080; }
+}
+
+/* Streak countdown bar */
+#streak-timer-bar {
+  width: 100%;
+  height: 3px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 2px;
+  margin-top: 3px;
+}
+#streak-timer-fill {
+  height: 100%;
+  width: 100%;
+  border-radius: 2px;
+  background: #40e060;
+  /* No CSS transition — width is updated by JS setInterval for smooth depletion */
+}
+
+/* ── Shrine (inline) ─────────────────────────────────────────── */
+#shrine-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90px;
+  flex-shrink: 0;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.35s, transform 0.35s cubic-bezier(0.34,1.56,0.64,1);
+}
+#shrine-section.active { opacity: 1; transform: scale(1); }
+
+#shrine-icon-label {
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: rgba(240,192,64,0.6);
+  text-transform: uppercase;
+}
+#shrine-time {
+  font-size: 28px;
+  font-weight: 900;
+  color: #f0c040;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.1;
+  text-shadow: 0 0 12px rgba(240,192,64,0.45);
+}
+#shrine-section.warning #shrine-time {
+  color: #ff5020;
+  text-shadow: 0 0 14px rgba(255,80,32,0.5);
+  animation: shrineWarnBlink 0.85s ease-in-out infinite;
+}
+@keyframes shrineWarnBlink {
+  0%,100% { opacity: 1; }
+  50%      { opacity: 0.55; }
+}
+
+/* ── Teleport Tickets ───────────────────────────────────────── */
+#tickets-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 72px;
+  flex-shrink: 0;
+}
+#tickets-label {
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: rgba(160,200,255,0.6);
+  text-transform: uppercase;
+}
+#tickets-count {
+  font-size: 28px;
+  font-weight: 900;
+  color: #a0c8ff;
+  line-height: 1.1;
+  text-shadow: 0 0 12px rgba(100,180,255,0.4);
+  transition: color 0.2s;
+}
+#tickets-count.used {
+  animation: ticketUsed 0.5s ease-out;
+}
+@keyframes ticketUsed {
+  0%   { transform: scale(1.3); color: #ff8080; text-shadow: 0 0 20px rgba(255,100,100,0.7); }
+  100% { transform: scale(1);   color: #a0c8ff; }
+}
+
+/* ── Teleport Flash ──────────────────────────────────────────── */
+#teleport-flash {
+  position: fixed;
+  inset: 0;
+  background: rgba(100,160,255,0.18);
+  pointer-events: none;
+  opacity: 0;
+  border-radius: 10px;
+}
+#teleport-flash.active {
+  animation: teleportFlash 0.7s ease-out forwards;
+}
+@keyframes teleportFlash {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* ── Floating XP Numbers ────────────────────────────────────── */
+#float-container {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: visible;
+  z-index: 10;
+}
+.xp-float {
+  position: absolute;
+  font-size: 18px;
+  font-weight: 900;
+  pointer-events: none;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.9);
+  white-space: nowrap;
+  animation: floatUp 1100ms cubic-bezier(0.2,0.8,0.4,1) forwards;
+}
+.xp-float.mul-1  { color: #f0c040; }
+.xp-float.mul-15 { color: #ffa020; }
+.xp-float.mul-2  { color: #ff7010; }
+.xp-float.mul-25 { color: #ff4010; }
+.xp-float.mul-3  { color: #ff2000; }
+@keyframes floatUp {
+  0%   { transform: translateY(0) scale(1);        opacity: 1; }
+  25%  { transform: translateY(-16px) scale(1.08); opacity: 1; }
+  75%  { opacity: 0.6; }
+  100% { transform: translateY(-110px) scale(0.75); opacity: 0; }
+}
+
+/* Teleport –1 float */
+.ticket-float {
+  position: absolute;
+  font-size: 16px;
+  font-weight: 900;
+  color: #ff8080;
+  pointer-events: none;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.9);
+  animation: floatUp 900ms ease-out forwards;
+}
+
+/* ── Level Up Flash ─────────────────────────────────────────── */
+#levelup-flash {
+  position: fixed;
+  inset: -40px;
+  background: rgba(240,192,64,0.13);
+  pointer-events: none;
+  opacity: 0;
+}
+#levelup-flash.active {
+  animation: lvlFlash 1.4s ease-out forwards;
+}
+@keyframes lvlFlash {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}

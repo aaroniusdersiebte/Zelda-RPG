@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1280">
+  <title>Zelda RPG Overlay</title>
+  <link rel="stylesheet" href="/overlay/overlay.css">
+</head>
+<body>
+
+<div id="hud">
+  <!-- Level -->
+  <div id="level-badge">
+    <span id="level-label">LVL</span>
+    <span id="level-number">1</span>
+  </div>
+
+  <div class="hud-divider"></div>
+
+  <!-- XP Bar (no text labels) -->
+  <div id="xp-section">
+    <div id="xp-bar-track">
+      <div id="xp-bar-fill" style="width:0%"></div>
+    </div>
+  </div>
+
+  <div class="hud-divider"></div>
+
+  <!-- Streak + countdown bar (no combo label) -->
+  <div id="streak-section">
+    <div id="streak-top">
+      <span id="streak-flame">🔥</span>
+      <span id="streak-count">1</span>
+    </div>
+    <span id="streak-xp">0 XP</span>
+    <div id="streak-timer-bar">
+      <div id="streak-timer-fill"></div>
+    </div>
+  </div>
+
+  <div class="hud-divider"></div>
+
+  <!-- Shrine timer (inline, no emoji/bonus text) -->
+  <div id="shrine-section">
+    <span id="shrine-icon-label">SCHREIN</span>
+    <span id="shrine-time">0:00</span>
+  </div>
+
+  <div class="hud-divider"></div>
+
+  <!-- Teleport Tickets (no emoji) -->
+  <div id="tickets-section">
+    <span id="tickets-label">TELEPORT</span>
+    <span id="tickets-count">0</span>
+  </div>
+</div>
+
+<!-- Floating XP container -->
+<div id="float-container"></div>
+
+<!-- Teleport use flash -->
+<div id="teleport-flash"></div>
+
+<!-- Level up flash -->
+<div id="levelup-flash"></div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/overlay/overlay.js"></script>
+</body>
+</html>

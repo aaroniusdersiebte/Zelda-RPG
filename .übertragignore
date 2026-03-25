@@ -1,0 +1,22 @@
+# Build & Temp
+dist/
+build/
+out/
+*.log
+.cache/
+tmp/
+temp/
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+.npm
+.yarn
+package-lock.json
+yarn.lock
+
+
+data/
+regions.json
+.git/

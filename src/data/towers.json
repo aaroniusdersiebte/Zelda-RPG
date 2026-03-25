@@ -1,0 +1,92 @@
+[
+  {
+    "id": "Tower01",
+    "name": "Lookout Landing Skyview Tower",
+    "x": -298.9,
+    "z": -142.9
+  },
+  {
+    "id": "Tower02",
+    "name": "Lindor's Brow Skyview Tower",
+    "x": -1909.6,
+    "z": -1245.3
+  },
+  {
+    "id": "Tower03",
+    "name": "Pikida Stonegrove Skyview Tower",
+    "x": -2311.5,
+    "z": -3062.5
+  },
+  {
+    "id": "Tower04",
+    "name": "Eldin Canyon Skyview Tower",
+    "x": 1641.8,
+    "z": -1190.8
+  },
+  {
+    "id": "Tower05",
+    "name": "Akkala Skyview Tower",
+    "x": 3499.0,
+    "z": -2026.0
+  },
+  {
+    "id": "Tower06",
+    "name": "Lanayru Wetlands Skyview Tower",
+    "x": 1341.1,
+    "z": 1177.9
+  },
+  {
+    "id": "Tower07",
+    "name": "Mount Lanayru Skyview Tower",
+    "x": 2866.1,
+    "z": -581.2
+  },
+  {
+    "id": "Tower08",
+    "name": "Hyrule Field Skyview Tower",
+    "x": -761.3,
+    "z": 1019.2
+  },
+  {
+    "id": "Tower09",
+    "name": "Gerudo Canyon Skyview Tower",
+    "x": -2438.9,
+    "z": 2182.8
+  },
+  {
+    "id": "Tower10",
+    "name": "Gerudo Highlands Skyview Tower",
+    "x": -3960.9,
+    "z": 1305.6
+  },
+  {
+    "id": "Tower11",
+    "name": "Necluda Skyview Tower",
+    "x": 2420.0,
+    "z": 2754.9
+  },
+  {
+    "id": "Tower12",
+    "name": "Rabella Wetlands Skyview Tower",
+    "x": 343.7,
+    "z": -3141.6
+  },
+  {
+    "id": "Tower13",
+    "name": "Popla Foothills Skyview Tower",
+    "x": 604.8,
+    "z": 2126.9
+  },
+  {
+    "id": "Tower14",
+    "name": "Ulri Mountain Skyview Tower",
+    "x": 3847.6,
+    "z": 1314.9
+  },
+  {
+    "id": "Tower15",
+    "name": "Rospro Pass Skyview Tower",
+    "x": -3679.6,
+    "z": -2346.4
+  }
+]

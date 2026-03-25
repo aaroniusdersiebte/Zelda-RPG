@@ -1,0 +1,36 @@
+# Build / Output
+dist/
+build/
+out/
+.output/
+
+# Dependencies
+node_modules/
+.pnp
+.yarn/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.suo
+*.user
+
+# Tool-Dateien
+ghflow.bat
+PROJECT_MAP.md
+CLAUDE.md
+GEMINI.md

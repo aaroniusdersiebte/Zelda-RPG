@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Zelda RPG Tracker</title>
+  <link rel="stylesheet" href="/ui/styles.css">
+<<<<<<< HEAD
+=======
+  <link rel="stylesheet" href="/ui/map.css">
+>>>>>>> 349a50b (map integration)
+</head>
+<body>
+
+<!-- Title Bar -->
+<div id="titlebar">
+  <span id="titlebar-title">⚔ Zelda RPG Tracker</span>
+  <button id="btn-reset">RESET RUN</button>
+</div>
+
+<<<<<<< HEAD
+<div id="app">
+  <!-- Top: Level + XP -->
+  <div id="top-section">
+    <div id="level-display">
+      <span id="level-label">LEVEL</span>
+      <span id="level-number">1</span>
+    </div>
+    <div id="xp-section">
+      <div id="xp-header">
+        <span>ERFAHRUNG</span>
+        <span id="xp-numbers">0 / 100 XP</span>
+      </div>
+      <div id="xp-bar-track">
+        <div id="xp-bar-fill" style="width:0%"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Middle: Upgrades + Stats -->
+  <div id="middle-section">
+    <div id="upgrades-panel">
+      <div id="upgrades-title">Freigeschaltete Fähigkeiten</div>
+      <div id="upgrades-grid">
+        <span id="no-upgrades" style="font-size:12px;color:var(--muted)">Noch keine Upgrades</span>
+      </div>
+    </div>
+    <div id="stats-panel">
+      <div id="stats-title" style="font-size:10px;letter-spacing:2px;color:var(--muted);text-transform:uppercase;margin-bottom:4px">Run Stats</div>
+      <div class="stat-item"><span class="stat-label">⚔ Kills</span><span class="stat-value" id="stat-kills">0</span></div>
+      <div class="stat-item"><span class="stat-label">📦 Truhen</span><span class="stat-value" id="stat-chests">0</span></div>
+      <div class="stat-item"><span class="stat-label">🌿 Krogs</span><span class="stat-value" id="stat-krogs">0</span></div>
+      <div class="stat-item"><span class="stat-label">📜 Quests</span><span class="stat-value" id="stat-quests">0</span></div>
+      <div class="stat-item"><span class="stat-label">🍳 Gekocht</span><span class="stat-value" id="stat-cooks">0</span></div>
+      <div class="stat-item"><span class="stat-label">⛩ Schreine</span><span class="stat-value" id="stat-shrines">0</span></div>
+      <div class="stat-item"><span class="stat-label">✨ Gesamt XP</span><span class="stat-value highlight" id="stat-total-xp">0</span></div>
+    </div>
+  </div>
+
+  <!-- Bottom: Streak + Shrine + Tickets -->
+  <div id="bottom-section">
+    <div id="streak-display" class="inactive">
+      <span id="streak-flame">🔥</span>
+      <div id="streak-info">
+        <span id="streak-count">0</span>
+        <span id="streak-label">STREAK</span>
+      </div>
+    </div>
+    <div id="shrine-display">
+      <span id="shrine-icon">⛩</span>
+      <div id="shrine-info">
+        <span id="shrine-label">SCHREIN TIMER</span>
+        <span id="shrine-time">–</span>
+        <span id="shrine-status">Inaktiv</span>
+      </div>
+    </div>
+    <div id="tickets-display">
+      <span id="tickets-label">Teleport</span>
+      <span id="tickets-icon">🎫</span>
+      <span id="tickets-count">0</span>
+    </div>
+=======
+<!-- Persistent XP Header (visible in both tabs) -->
+<div id="xp-header-bar">
+  <div id="xp-level-badge">
+    <span id="xp-level-label">LVL</span>
+    <span id="xp-level-number">1</span>
+  </div>
+  <div id="xp-bar-section">
+    <div id="xp-bar-track">
+      <div id="xp-bar-fill" style="width:0%"></div>
+    </div>
+    <span id="xp-numbers">0 / 100 XP</span>
+  </div>
+  <div id="xp-tickets-mini">
+    <span>🎫</span>
+    <span id="xp-tickets-count">0</span>
+  </div>
+</div>
+
+<!-- Tab Navigation -->
+<div id="tab-nav">
+  <button class="tab-btn active" data-tab="tracker">⚔ Tracker</button>
+  <button class="tab-btn" data-tab="map">🗺 Conquest Map</button>
+</div>
+
+<!-- Tab: Tracker -->
+<div id="tab-tracker" class="tab-content active">
+  <div id="app">
+    <!-- Middle: Upgrades + Stats -->
+    <div id="middle-section">
+      <div id="upgrades-panel">
+        <div id="upgrades-title">Freigeschaltete Fähigkeiten</div>
+        <div id="upgrades-grid">
+          <span id="no-upgrades" style="font-size:12px;color:var(--muted)">Noch keine Upgrades</span>
+        </div>
+      </div>
+      <div id="stats-panel">
+        <div id="stats-title" style="font-size:10px;letter-spacing:2px;color:var(--muted);text-transform:uppercase;margin-bottom:4px">Run Stats</div>
+        <div class="stat-item"><span class="stat-label">⚔ Kills</span><span class="stat-value" id="stat-kills">0</span></div>
+        <div class="stat-item"><span class="stat-label">📦 Truhen</span><span class="stat-value" id="stat-chests">0</span></div>
+        <div class="stat-item"><span class="stat-label">🌿 Krogs</span><span class="stat-value" id="stat-krogs">0</span></div>
+        <div class="stat-item"><span class="stat-label">📜 Quests</span><span class="stat-value" id="stat-quests">0</span></div>
+        <div class="stat-item"><span class="stat-label">🍳 Gekocht</span><span class="stat-value" id="stat-cooks">0</span></div>
+        <div class="stat-item"><span class="stat-label">⛩ Schreine</span><span class="stat-value" id="stat-shrines">0</span></div>
+        <div class="stat-item"><span class="stat-label">✨ Gesamt XP</span><span class="stat-value highlight" id="stat-total-xp">0</span></div>
+      </div>
+    </div>
+
+    <!-- Bottom: Streak + Shrine + Tickets -->
+    <div id="bottom-section">
+      <div id="streak-display" class="inactive">
+        <span id="streak-flame">🔥</span>
+        <div id="streak-info">
+          <span id="streak-count">0</span>
+          <span id="streak-label">STREAK</span>
+        </div>
+      </div>
+      <div id="shrine-display">
+        <span id="shrine-icon">⛩</span>
+        <div id="shrine-info">
+          <span id="shrine-label">SCHREIN TIMER</span>
+          <span id="shrine-time">–</span>
+          <span id="shrine-status">Inaktiv</span>
+        </div>
+      </div>
+      <div id="tickets-display">
+        <span id="tickets-label">Teleport</span>
+        <span id="tickets-icon">🎫</span>
+        <span id="tickets-count">0</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Tab: Conquest Map -->
+<div id="tab-map" class="tab-content">
+  <div id="map-layout">
+    <!-- Left: Canvas -->
+    <div id="map-canvas-wrap">
+      <div id="map-controls">
+        <button id="btn-edit-mode">✏ Gebiete bearbeiten</button>
+        <span id="map-active-label">Kein aktives Gebiet</span>
+        <button id="btn-deactivate" style="display:none">✕ Deaktivieren</button>
+      </div>
+      <canvas id="map-canvas"></canvas>
+      <!-- Edit mode overlay: Neues Gebiet -->
+      <div id="edit-name-popup" style="display:none">
+        <div id="edit-name-title" style="font-size:11px;color:#888;letter-spacing:1px;text-transform:uppercase">Neues Gebiet</div>
+        <input id="edit-name-input" type="text" placeholder="Gebietsname eingeben..." />
+        <button id="edit-name-confirm">✓ Erstellen</button>
+        <button id="edit-name-cancel">✕</button>
+      </div>
+      <!-- Rename popup -->
+      <div id="rename-popup" style="display:none">
+        <div id="rename-title" style="font-size:11px;color:#888;letter-spacing:1px;text-transform:uppercase">Umbenennen</div>
+        <input id="rename-input" type="text" placeholder="Neuer Name..." />
+        <button id="rename-confirm">✓ Speichern</button>
+        <button id="rename-cancel">✕</button>
+      </div>
+    </div>
+    <!-- Right: Conquest Panel -->
+    <div id="conquest-panel">
+      <div id="conquest-panel-header">Conquest</div>
+      <div id="conquest-no-region">Klicke ein Gebiet auf der Karte an</div>
+      <div id="conquest-region-info" style="display:none">
+        <div id="conquest-region-name"></div>
+        <div id="conquest-region-status"></div>
+        <div class="conquest-section">
+          <div class="conquest-section-title">⛩ Schreine</div>
+          <div id="conquest-shrines-list"></div>
+        </div>
+        <div class="conquest-section">
+          <div class="conquest-section-title">⚔ Gegner</div>
+          <div id="conquest-kills-list"></div>
+        </div>
+        <div class="conquest-section">
+          <div class="conquest-section-title">🗼 Turm</div>
+          <div id="conquest-tower-status"></div>
+        </div>
+        <div class="conquest-section">
+          <div class="conquest-section-title">🌿 Koroks</div>
+          <div id="conquest-krogs-status"></div>
+        </div>
+      </div>
+      <!-- Region list for edit mode -->
+      <div id="conquest-region-list" style="display:none">
+        <div class="conquest-section-title">Definierte Gebiete</div>
+        <div id="region-list-items"></div>
+      </div>
+    </div>
+>>>>>>> 349a50b (map integration)
+  </div>
+</div>
+
+<!-- Level Up Modal -->
+<div id="levelup-modal">
+  <div id="levelup-title">LEVEL UP — Wähle eine Fähigkeit</div>
+  <div id="levelup-cards"></div>
+</div>
+
+<!-- Game Over Modal -->
+<div id="gameover-modal">
+  <div id="gameover-flash"></div>
+  <div id="gameover-title">GAME OVER</div>
+  <div id="gameover-subtitle">WÄHLE EINE FÄHIGKEIT ZU VERLIEREN</div>
+  <div id="gameover-cards"></div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/ui/renderer.js"></script>
+<<<<<<< HEAD
+=======
+<script src="/ui/map.js"></script>
+>>>>>>> 349a50b (map integration)
+</body>
+</html>

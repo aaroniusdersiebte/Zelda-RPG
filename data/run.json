@@ -1,0 +1,80 @@
+{
+  "runId": "e3ea0c08-a5a2-462b-9590-b83f5616a4b1",
+  "startedAt": 1774267418021,
+  "level": 10,
+<<<<<<< HEAD
+  "xp": 319,
+  "xpToNextLevel": 515,
+  "totalXpEarned": 2395,
+=======
+  "xp": 334,
+  "xpToNextLevel": 515,
+  "totalXpEarned": 2410,
+>>>>>>> 349a50b (map integration)
+  "streak": 10,
+  "lastKillAt": 1774434968267,
+  "shrineActive": true,
+  "shrineStartedAt": 1774434964889,
+  "teleportTickets": 9,
+  "ownedUpgrades": [
+    "ultrahand",
+    "zonai-bauteile",
+    "deckensprung",
+    "ruestung-kopf",
+    "ruestung-torso",
+    "arrow-fuse",
+    "ruestung-hose"
+  ],
+  "kills": {
+    "klein": 25,
+    "normal": 16,
+    "stark": 1,
+    "miniboss": 1,
+    "boss": 0
+  },
+  "chestsOpened": 3,
+<<<<<<< HEAD
+  "krogsFound": 1,
+  "questsCompleted": 2,
+  "cookSuccesses": 0,
+  "shrinesCompleted": 2
+=======
+  "krogsFound": 2,
+  "questsCompleted": 2,
+  "cookSuccesses": 0,
+  "shrinesCompleted": 2,
+  "conquest": {
+    "activeRegionId": "8cbeeea4-b13d-423e-85e0-c9c9c5856112",
+    "regions": {
+      "8cbeeea4-b13d-423e-85e0-c9c9c5856112": {
+        "roll": {
+          "shrineIds": [
+            "shrine_dungeon136",
+            "shrine_dungeon123"
+          ],
+          "killRequirements": {
+            "miniboss": 16,
+            "klein": 18
+          },
+          "towerId": "Tower01",
+          "towerRequired": true,
+          "korokRequired": 1
+        },
+        "progress": {
+          "shrinesDone": [
+            "shrine_dungeon136",
+            "shrine_dungeon123"
+          ],
+          "killsDone": {
+            "miniboss": 0,
+            "klein": 0
+          },
+          "towerDone": true,
+          "koroksDone": 1
+        },
+        "conquered": false
+      }
+    }
+  }
+>>>>>>> 349a50b (map integration)
+}

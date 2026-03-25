@@ -1,0 +1,1218 @@
+[
+  {
+    "id": "shrine_dungeon000",
+    "name": "Tajikats Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 343.86,
+    "z": 1009.03
+  },
+  {
+    "id": "shrine_dungeon001",
+    "name": "Jochi-iu Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 4346.62,
+    "z": -2876.19
+  },
+  {
+    "id": "shrine_dungeon002",
+    "name": "Sitsum Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 2369.07,
+    "z": -2596.35
+  },
+  {
+    "id": "shrine_dungeon003",
+    "name": "Oromuwak Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -3078.52,
+    "z": -1617.27
+  },
+  {
+    "id": "shrine_dungeon004",
+    "name": "Mayachin Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -705.5,
+    "z": 868.5
+  },
+  {
+    "id": "shrine_dungeon005",
+    "name": "Musanokir Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 407.76,
+    "z": -2133.73
+  },
+  {
+    "id": "shrine_dungeon006",
+    "name": "Ren-iz Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 756.46,
+    "z": -823.94
+  },
+  {
+    "id": "shrine_dungeon007",
+    "name": "Sahirow Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -3354.12,
+    "z": -2386.29
+  },
+  {
+    "id": "shrine_dungeon008",
+    "name": "Rotsumamu Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -3407.01,
+    "z": 1363.14
+  },
+  {
+    "id": "shrine_dungeon009",
+    "name": "Mayamats Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -4637.62,
+    "z": 1513.27
+  },
+  {
+    "id": "shrine_dungeon010",
+    "name": "Serutabomac Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -178.78,
+    "z": -1170.12
+  },
+  {
+    "id": "shrine_dungeon011",
+    "name": "Mogawak Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 3299.95,
+    "z": -423.79
+  },
+  {
+    "id": "shrine_dungeon012",
+    "name": "Zanmik Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 3469.54,
+    "z": 2180.78
+  },
+  {
+    "id": "shrine_dungeon013",
+    "name": "Jiukoum Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 867.5,
+    "z": 2278.4
+  },
+  {
+    "id": "shrine_dungeon014",
+    "name": "Iun-orok Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -3538.9,
+    "z": -851.0
+  },
+  {
+    "id": "shrine_dungeon015",
+    "name": "Rakashog Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -1715.41,
+    "z": 2118.71
+  },
+  {
+    "id": "shrine_dungeon016",
+    "name": "Soryotanog Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -3882.2,
+    "z": 2962.55
+  },
+  {
+    "id": "shrine_dungeon017",
+    "name": "Mayak Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 1269.9,
+    "z": -3733.43
+  },
+  {
+    "id": "shrine_dungeon018",
+    "name": "Gemimik Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 4512.71,
+    "z": -2115.71
+  },
+  {
+    "id": "shrine_dungeon019",
+    "name": "Orochium Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -1636.76,
+    "z": -2641.82
+  },
+  {
+    "id": "shrine_dungeon020",
+    "name": "Sinakawak Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -1414.62,
+    "z": -756.85
+  },
+  {
+    "id": "shrine_dungeon021",
+    "name": "Tauyosipun Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -4538.6,
+    "z": -2880.47
+  },
+  {
+    "id": "shrine_dungeon022",
+    "name": "Tukarok Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 915.49,
+    "z": 251.01
+  },
+  {
+    "id": "shrine_dungeon023",
+    "name": "Sikukuu Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 698.55,
+    "z": -2793.06
+  },
+  {
+    "id": "shrine_dungeon024",
+    "name": "Siwakama Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -2445.7,
+    "z": 3344.32
+  },
+  {
+    "id": "shrine_dungeon025",
+    "name": "Turakawak Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -3497.68,
+    "z": 197.19
+  },
+  {
+    "id": "shrine_dungeon026",
+    "name": "Riogok Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -1441.4,
+    "z": 1616.09
+  },
+  {
+    "id": "shrine_dungeon027",
+    "name": "Anedamimik Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 4232.21,
+    "z": 2178.17
+  },
+  {
+    "id": "shrine_dungeon028",
+    "name": "Mayausiy Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -1166.91,
+    "z": -2602.43
+  },
+  {
+    "id": "shrine_dungeon029",
+    "name": "Ishodag Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -879.39,
+    "z": -422.54
+  },
+  {
+    "id": "shrine_dungeon030",
+    "name": "Kiuyoyou Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -1106.74,
+    "z": -2087.81
+  },
+  {
+    "id": "shrine_dungeon031",
+    "name": "Ekochiu Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 1062.65,
+    "z": -1280.46
+  },
+  {
+    "id": "shrine_dungeon032",
+    "name": "Tadarok Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -1081.88,
+    "z": 2186.94
+  },
+  {
+    "id": "shrine_dungeon033",
+    "name": "Karahatag Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -3727.7,
+    "z": 3625.13
+  },
+  {
+    "id": "shrine_dungeon034",
+    "name": "Tenbez Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -970.18,
+    "z": -3535.0
+  },
+  {
+    "id": "shrine_dungeon035",
+    "name": "Kisinona Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 2567.85,
+    "z": -1245.94
+  },
+  {
+    "id": "shrine_dungeon036",
+    "name": "Oshozan-u Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -1404.5,
+    "z": -3677.91
+  },
+  {
+    "id": "shrine_dungeon037",
+    "name": "Gasas Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -4153.18,
+    "z": -98.3
+  },
+  {
+    "id": "shrine_dungeon038",
+    "name": "Ijo-o Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -3861.15,
+    "z": -2681.52
+  },
+  {
+    "id": "shrine_dungeon039",
+    "name": "Turakamik Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -2657.25,
+    "z": 2237.3
+  },
+  {
+    "id": "shrine_dungeon040",
+    "name": "Gatakis Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -3651.68,
+    "z": -1806.03
+  },
+  {
+    "id": "shrine_dungeon041",
+    "name": "Ihen-a Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 3786.22,
+    "z": -577.78
+  },
+  {
+    "id": "shrine_dungeon042",
+    "name": "Tsutsu-um Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -1423.25,
+    "z": 1350.75
+  },
+  {
+    "id": "shrine_dungeon043",
+    "name": "Mayaumekis Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -2947.92,
+    "z": -3050.67
+  },
+  {
+    "id": "shrine_dungeon044",
+    "name": "Kamatukis Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 3431.07,
+    "z": -3356.72
+  },
+  {
+    "id": "shrine_dungeon045",
+    "name": "Jirutagumac Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 2915.88,
+    "z": -534.32
+  },
+  {
+    "id": "shrine_dungeon046",
+    "name": "Sepapa Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 221.75,
+    "z": -1085.05
+  },
+  {
+    "id": "shrine_dungeon047",
+    "name": "Mayatat Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -3290.62,
+    "z": 2512.21
+  },
+  {
+    "id": "shrine_dungeon048",
+    "name": "Susuyai Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -785.41,
+    "z": 434.05
+  },
+  {
+    "id": "shrine_dungeon049",
+    "name": "Apogek Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 3886.69,
+    "z": 216.77
+  },
+  {
+    "id": "shrine_dungeon050",
+    "name": "Kadaunar Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 1881.97,
+    "z": -1202.82
+  },
+  {
+    "id": "shrine_dungeon051",
+    "name": "Domizuin Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 3304.88,
+    "z": -1442.98
+  },
+  {
+    "id": "shrine_dungeon052",
+    "name": "Mogisari Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 4655.0,
+    "z": -3499.54
+  },
+  {
+    "id": "shrine_dungeon053",
+    "name": "Kikakin Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -395.87,
+    "z": -2735.85
+  },
+  {
+    "id": "shrine_dungeon054",
+    "name": "Sibajitak Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 2400.27,
+    "z": -3275.07
+  },
+  {
+    "id": "shrine_dungeon055",
+    "name": "Siyamotsus Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -1795.0,
+    "z": 3294.6
+  },
+  {
+    "id": "shrine_dungeon056",
+    "name": "Utsushok Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 670.0,
+    "z": 3358.39
+  },
+  {
+    "id": "shrine_dungeon057",
+    "name": "Jikais Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 4266.92,
+    "z": 1673.44
+  },
+  {
+    "id": "shrine_dungeon058",
+    "name": "Kitawak Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -1530.2,
+    "z": 2928.76
+  },
+  {
+    "id": "shrine_dungeon059",
+    "name": "Sonapan Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -1921.5,
+    "z": 358.5
+  },
+  {
+    "id": "shrine_dungeon060",
+    "name": "Ukouh Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 274.91,
+    "z": 912.71
+  },
+  {
+    "id": "shrine_dungeon061",
+    "name": "Gutanbac Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 709.13,
+    "z": 1382.69
+  },
+  {
+    "id": "shrine_dungeon062",
+    "name": "In-isa Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 26.07,
+    "z": 1503.6
+  },
+  {
+    "id": "shrine_dungeon063",
+    "name": "Nachoyah Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 389.63,
+    "z": 1661.45
+  },
+  {
+    "id": "shrine_dungeon064",
+    "name": "Marakuguc Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 1762.49,
+    "z": -2509.65
+  },
+  {
+    "id": "shrine_dungeon065",
+    "name": "Runakit Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -2529.98,
+    "z": -1170.17
+  },
+  {
+    "id": "shrine_dungeon066",
+    "name": "Mayanas Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 4613.31,
+    "z": 947.13
+  },
+  {
+    "id": "shrine_dungeon067",
+    "name": "Wao-os Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -4058.44,
+    "z": -1990.0
+  },
+  {
+    "id": "shrine_dungeon068",
+    "name": "Kyokugon Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -709.25,
+    "z": 1551.04
+  },
+  {
+    "id": "shrine_dungeon069",
+    "name": "Igoshon Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 3480.71,
+    "z": -665.88
+  },
+  {
+    "id": "shrine_dungeon070",
+    "name": "Nouda Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -2318.21,
+    "z": -2201.21
+  },
+  {
+    "id": "shrine_dungeon071",
+    "name": "Joku-usin Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 1075.28,
+    "z": 3347.77
+  },
+  {
+    "id": "shrine_dungeon072",
+    "name": "Eutoum Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -3506.88,
+    "z": -3570.0
+  },
+  {
+    "id": "shrine_dungeon073",
+    "name": "Isisim Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 1842.02,
+    "z": -2842.03
+  },
+  {
+    "id": "shrine_dungeon074",
+    "name": "Mayachideg Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 3061.0,
+    "z": -1824.02
+  },
+  {
+    "id": "shrine_dungeon075",
+    "name": "Otutsum Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -4469.01,
+    "z": 671.47
+  },
+  {
+    "id": "shrine_dungeon076",
+    "name": "Utojis Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 1218.44,
+    "z": 2543.16
+  },
+  {
+    "id": "shrine_dungeon077",
+    "name": "Kamizun Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -177.79,
+    "z": 1558.29
+  },
+  {
+    "id": "shrine_dungeon078",
+    "name": "Suariwak Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -2524.26,
+    "z": 1770.12
+  },
+  {
+    "id": "shrine_dungeon079",
+    "name": "Rakakudaj Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -2036.96,
+    "z": 1853.4
+  },
+  {
+    "id": "shrine_dungeon080",
+    "name": "Rasitakiwak Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 4166.7,
+    "z": -1322.74
+  },
+  {
+    "id": "shrine_dungeon081",
+    "name": "Zakusu Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 3526.22,
+    "z": 1482.29
+  },
+  {
+    "id": "shrine_dungeon082",
+    "name": "Simosiwak Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 162.47,
+    "z": -1971.65
+  },
+  {
+    "id": "shrine_dungeon083",
+    "name": "Yansamin Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 2350.99,
+    "z": 1782.81
+  },
+  {
+    "id": "shrine_dungeon084",
+    "name": "Jojon Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 1202.09,
+    "z": -329.73
+  },
+  {
+    "id": "shrine_dungeon085",
+    "name": "Sifumim Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 2825.83,
+    "z": 3270.35
+  },
+  {
+    "id": "shrine_dungeon086",
+    "name": "Otak Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -4390.57,
+    "z": -3714.1
+  },
+  {
+    "id": "shrine_dungeon087",
+    "name": "Miryotanog Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -4680.1,
+    "z": 3086.44
+  },
+  {
+    "id": "shrine_dungeon088",
+    "name": "Kimayat Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 2864.04,
+    "z": -3638.22
+  },
+  {
+    "id": "shrine_dungeon089",
+    "name": "Momosik Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 2960.01,
+    "z": -2758.11
+  },
+  {
+    "id": "shrine_dungeon090",
+    "name": "Igashuk Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 4654.99,
+    "z": -3713.84
+  },
+  {
+    "id": "shrine_dungeon091",
+    "name": "Taki-ihaban Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -1829.7,
+    "z": -1195.27
+  },
+  {
+    "id": "shrine_dungeon092",
+    "name": "En-oma Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 103.41,
+    "z": 2518.05
+  },
+  {
+    "id": "shrine_dungeon093",
+    "name": "Kumamayn Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 2856.85,
+    "z": 2856.47
+  },
+  {
+    "id": "shrine_dungeon094",
+    "name": "Yomizuk Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 4413.23,
+    "z": 613.12
+  },
+  {
+    "id": "shrine_dungeon095",
+    "name": "Mayahisik Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 3729.38,
+    "z": 2058.66
+  },
+  {
+    "id": "shrine_dungeon096",
+    "name": "Motsusis Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -1795.01,
+    "z": 3486.56
+  },
+  {
+    "id": "shrine_dungeon097",
+    "name": "Maoikes Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 2276.23,
+    "z": -147.35
+  },
+  {
+    "id": "shrine_dungeon098",
+    "name": "Moshapin Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 2679.24,
+    "z": -1904.45
+  },
+  {
+    "id": "shrine_dungeon099",
+    "name": "Gikaku Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 4506.0,
+    "z": -2166.02
+  },
+  {
+    "id": "shrine_dungeon100",
+    "name": "Usazum Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -2138.98,
+    "z": 874.44
+  },
+  {
+    "id": "shrine_dungeon101",
+    "name": "Joniu Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 2918.25,
+    "z": -507.0
+  },
+  {
+    "id": "shrine_dungeon102",
+    "name": "Jiotak Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 1834.45,
+    "z": -3180.35
+  },
+  {
+    "id": "shrine_dungeon103",
+    "name": "Ikatak Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -3951.06,
+    "z": -1139.08
+  },
+  {
+    "id": "shrine_dungeon104",
+    "name": "Chichim Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -3211.0,
+    "z": 3006.5
+  },
+  {
+    "id": "shrine_dungeon105",
+    "name": "Kahatanaum Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -3296.01,
+    "z": -3431.51
+  },
+  {
+    "id": "shrine_dungeon106",
+    "name": "Ninjis Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 354.65,
+    "z": -1891.89
+  },
+  {
+    "id": "shrine_dungeon107",
+    "name": "Tokiy Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 2304.06,
+    "z": 2377.93
+  },
+  {
+    "id": "shrine_dungeon108",
+    "name": "Sakunbomar Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 166.66,
+    "z": -2320.13
+  },
+  {
+    "id": "shrine_dungeon109",
+    "name": "Joku-u Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 1376.41,
+    "z": 3339.86
+  },
+  {
+    "id": "shrine_dungeon110",
+    "name": "Natak Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 3670.7,
+    "z": -1483.7
+  },
+  {
+    "id": "shrine_dungeon111",
+    "name": "Rutafu-um Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -2997.81,
+    "z": -3101.63
+  },
+  {
+    "id": "shrine_dungeon112",
+    "name": "O-ogim Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 2755.53,
+    "z": 1089.25
+  },
+  {
+    "id": "shrine_dungeon113",
+    "name": "Jogou Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 3346.27,
+    "z": 1186.89
+  },
+  {
+    "id": "shrine_dungeon114",
+    "name": "Marari-in Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 4631.17,
+    "z": 3712.01
+  },
+  {
+    "id": "shrine_dungeon115",
+    "name": "Pupunke Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 621.1,
+    "z": -2211.41
+  },
+  {
+    "id": "shrine_dungeon116",
+    "name": "Bamitok Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 3093.98,
+    "z": 3209.68
+  },
+  {
+    "id": "shrine_dungeon117",
+    "name": "Ganos Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -3369.64,
+    "z": -467.49
+  },
+  {
+    "id": "shrine_dungeon118",
+    "name": "Irasak Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -4158.71,
+    "z": 3825.29
+  },
+  {
+    "id": "shrine_dungeon119",
+    "name": "Kurakat Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 2361.24,
+    "z": 510.75
+  },
+  {
+    "id": "shrine_dungeon120",
+    "name": "Susub Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 349.28,
+    "z": 2051.54
+  },
+  {
+    "id": "shrine_dungeon121",
+    "name": "Taunhiy Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -2401.84,
+    "z": -825.23
+  },
+  {
+    "id": "shrine_dungeon122",
+    "name": "Eshos Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 1565.84,
+    "z": 1944.81
+  },
+  {
+    "id": "shrine_dungeon123",
+    "name": "Yamiyo Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 333.15,
+    "z": -470.01
+  },
+  {
+    "id": "shrine_dungeon124",
+    "name": "Teniten Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -74.91,
+    "z": 1115.72
+  },
+  {
+    "id": "shrine_dungeon125",
+    "name": "Mayaotaki Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -824.82,
+    "z": -3535.03
+  },
+  {
+    "id": "shrine_dungeon126",
+    "name": "Makurukis Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -2846.97,
+    "z": -629.79
+  },
+  {
+    "id": "shrine_dungeon127",
+    "name": "Josiu Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 1758.49,
+    "z": 1208.38
+  },
+  {
+    "id": "shrine_dungeon128",
+    "name": "Ga-ahisas Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -3596.15,
+    "z": -960.79
+  },
+  {
+    "id": "shrine_dungeon129",
+    "name": "Sinatanika Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 3841.97,
+    "z": -2300.29
+  },
+  {
+    "id": "shrine_dungeon130",
+    "name": "Jochisiu Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 930.89,
+    "z": 1903.42
+  },
+  {
+    "id": "shrine_dungeon131",
+    "name": "Ishokin Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -565.0,
+    "z": 3524.0
+  },
+  {
+    "id": "shrine_dungeon132",
+    "name": "Sisuran Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -2559.44,
+    "z": -3353.76
+  },
+  {
+    "id": "shrine_dungeon133",
+    "name": "Tenmaten Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -594.51,
+    "z": -1550.62
+  },
+  {
+    "id": "shrine_dungeon134",
+    "name": "Jochi-ihiga Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 3810.52,
+    "z": -1219.11
+  },
+  {
+    "id": "shrine_dungeon135",
+    "name": "Makasura Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 1769.9,
+    "z": 1051.93
+  },
+  {
+    "id": "shrine_dungeon136",
+    "name": "Kyononis Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -205.15,
+    "z": -451.47
+  },
+  {
+    "id": "shrine_dungeon137",
+    "name": "Timawak Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 1799.55,
+    "z": -1639.54
+  },
+  {
+    "id": "shrine_dungeon138",
+    "name": "Jonsau Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 1743.66,
+    "z": -17.59
+  },
+  {
+    "id": "shrine_dungeon139",
+    "name": "Rasiwak Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 4664.12,
+    "z": -3263.22
+  },
+  {
+    "id": "shrine_dungeon140",
+    "name": "Kudanisar Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -4167.11,
+    "z": 2143.2
+  },
+  {
+    "id": "shrine_dungeon141",
+    "name": "Joju-u-u Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 1515.19,
+    "z": 3577.11
+  },
+  {
+    "id": "shrine_dungeon142",
+    "name": "Jiosin Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -240.74,
+    "z": 371.03
+  },
+  {
+    "id": "shrine_dungeon143",
+    "name": "Gatanisis Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 4497.82,
+    "z": -826.41
+  },
+  {
+    "id": "shrine_dungeon144",
+    "name": "Morok Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 1181.58,
+    "z": 779.39
+  },
+  {
+    "id": "shrine_dungeon145",
+    "name": "Jinodok Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -1257.24,
+    "z": 1486.96
+  },
+  {
+    "id": "shrine_dungeon146",
+    "name": "Sihajog Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 4545.82,
+    "z": 846.09
+  },
+  {
+    "id": "shrine_dungeon147",
+    "name": "Minetak Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 393.86,
+    "z": -3484.64
+  },
+  {
+    "id": "shrine_dungeon148",
+    "name": "Mayasiar Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -3546.68,
+    "z": 320.65
+  },
+  {
+    "id": "shrine_dungeon149",
+    "name": "Mayam Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 340.39,
+    "z": -2814.73
+  },
+  {
+    "id": "shrine_dungeon150",
+    "name": "Ukoojisi Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": 1468.61,
+    "z": 2168.89
+  },
+  {
+    "id": "shrine_dungeon151",
+    "name": "Taninoud Shrine",
+    "type": "shrine",
+    "canStartQuest": false,
+    "x": -1802.02,
+    "z": -3406.81
+  }
+]
