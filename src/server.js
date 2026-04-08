@@ -3,10 +3,7 @@ const http = require('http');
 const { Server } = require('socket.io');
 const path = require('path');
 const gameState = require('./gameState');
-<<<<<<< HEAD
-=======
 const conquest = require('./conquest');
->>>>>>> 349a50b (map integration)
 
 function startServer(port) {
   return new Promise((resolve) => {
@@ -107,8 +104,6 @@ function startServer(port) {
       res.json(gameState.getPublicState());
     });
 
-<<<<<<< HEAD
-=======
     // --- Conquest: Region Definitions ---
 
     app.get('/api/regions', (req, res) => {
@@ -168,7 +163,6 @@ function startServer(port) {
       res.json({ result, conquestState: conquest.getState() });
     });
 
->>>>>>> 349a50b (map integration)
     httpServer.listen(port, () => {
       console.log(`Zelda RPG Tracker running on http://localhost:${port}`);
       resolve();

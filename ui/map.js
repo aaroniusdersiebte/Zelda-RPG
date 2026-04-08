@@ -97,11 +97,11 @@
 
       let size, alpha, tint;
       if (isDone) {
-        size = 24; alpha = 1; tint = '#44ff88';
+        size = 34; alpha = 1; tint = '#44ff88';
       } else if (isTarget) {
-        size = 26; alpha = 1; tint = '#f0c040';
+        size = 36; alpha = 1; tint = '#f0c040';
       } else {
-        size = 18; alpha = 0.45; tint = null;
+        size = 28; alpha = 0.45; tint = null;
       }
 
       ctx.globalAlpha = alpha;
@@ -130,12 +130,12 @@
 
       // Highlight-Ring bei aktivem Ziel
       if (isTarget && !isDone) {
-        ctx.globalAlpha = 0.8;
+        ctx.globalAlpha = 0.9;
         ctx.globalCompositeOperation = 'source-over';
         ctx.beginPath();
-        ctx.arc(p.x, p.y, size / 2 + 3, 0, Math.PI * 2);
+        ctx.arc(p.x, p.y, size / 2 + 5, 0, Math.PI * 2);
         ctx.strokeStyle = tint;
-        ctx.lineWidth = 1.5;
+        ctx.lineWidth = 2.5;
         ctx.stroke();
       }
 
@@ -155,11 +155,11 @@
 
       let size, alpha, tint;
       if (isDone) {
-        size = 26; alpha = 1; tint = '#44ff88';
+        size = 36; alpha = 1; tint = '#44ff88';
       } else if (isTarget) {
-        size = 28; alpha = 1; tint = '#88aaff';
+        size = 38; alpha = 1; tint = '#88aaff';
       } else {
-        size = 20; alpha = 0.4; tint = null;
+        size = 30; alpha = 0.4; tint = null;
       }
 
       ctx.globalAlpha = alpha;
@@ -184,12 +184,12 @@
       }
 
       if (isTarget && !isDone) {
-        ctx.globalAlpha = 0.8;
+        ctx.globalAlpha = 0.9;
         ctx.globalCompositeOperation = 'source-over';
         ctx.beginPath();
-        ctx.arc(p.x, p.y, size / 2 + 4, 0, Math.PI * 2);
+        ctx.arc(p.x, p.y, size / 2 + 6, 0, Math.PI * 2);
         ctx.strokeStyle = tint;
-        ctx.lineWidth = 2;
+        ctx.lineWidth = 2.5;
         ctx.stroke();
       }
 
@@ -208,34 +208,40 @@
       // Halo
       if (isActive) {
         ctx.beginPath();
-        ctx.arc(p.x, p.y, 18, 0, Math.PI * 2);
-        ctx.fillStyle = 'rgba(240,192,64,0.12)';
+        ctx.arc(p.x, p.y, 28, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(240,192,64,0.14)';
         ctx.fill();
-        ctx.strokeStyle = 'rgba(240,192,64,0.5)';
-        ctx.lineWidth = 2;
+        ctx.strokeStyle = 'rgba(240,192,64,0.6)';
+        ctx.lineWidth = 2.5;
         ctx.stroke();
       }
 
       // Marker
-      const markerSize = 10;
+      const markerSize = 14;
       ctx.beginPath();
       ctx.arc(p.x, p.y, markerSize / 2, 0, Math.PI * 2);
       ctx.fillStyle = isConquered ? '#44ff88' : isActive ? '#f0c040' : '#aaaacc';
       ctx.fill();
+      // Outer ring for contrast
+      ctx.strokeStyle = 'rgba(0,0,0,0.6)';
+      ctx.lineWidth = 1.5;
+      ctx.stroke();
 
       // Name-Label
       const labelText = (isConquered ? '✓ ' : '') + region.name;
-      ctx.font = `bold ${isActive ? 13 : 11}px sans-serif`;
+      ctx.font = `bold ${isActive ? 17 : 15}px sans-serif`;
       ctx.textAlign = 'center';
 
-      // Shadow
-      ctx.fillStyle = 'rgba(0,0,0,0.8)';
-      ctx.fillText(labelText, p.x + 1, p.y - markerSize - 4);
-      ctx.fillText(labelText, p.x - 1, p.y - markerSize - 4);
-      ctx.fillText(labelText, p.x, p.y - markerSize - 3);
-      ctx.fillText(labelText, p.x, p.y - markerSize - 5);
+      // Shadow (thicker for readability on map)
+      ctx.fillStyle = 'rgba(0,0,0,0.9)';
+      for (let dx = -2; dx <= 2; dx++) {
+        for (let dy = -2; dy <= 2; dy++) {
+          if (dx === 0 && dy === 0) continue;
+          ctx.fillText(labelText, p.x + dx, p.y - markerSize - 4 + dy);
+        }
+      }
 
-      ctx.fillStyle = isConquered ? '#44ff88' : isActive ? '#f0c040' : '#ccccee';
+      ctx.fillStyle = isConquered ? '#44ff88' : isActive ? '#f0c040' : '#ddddff';
       ctx.fillText(labelText, p.x, p.y - markerSize - 4);
       ctx.textAlign = 'left';
     }
@@ -266,7 +272,7 @@
   }
 
   function handlePlayClick(cx, cy, gameX, gameZ) {
-    const HIT_RADIUS_PX = 14;
+    const HIT_RADIUS_PX = 22;
 
     // Prüfe Schrein-Klick (nur Ziel-Schreine)
     const activeId = conquestState.activeRegionId;
@@ -304,7 +310,7 @@
     for (const region of regions) {
       const p = toCanvas(region.centerX, region.centerZ);
       const d = Math.hypot(p.x - cx, p.y - cy);
-      if (d < 20) {
+      if (d < 30) {
         activateRegion(region.id);
         return;
       }
@@ -632,6 +638,7 @@
       }
       render();
       updateConquestPanel();
+      window.sfx?.regionConquered();
       // Flash conquered panel
       const panel = document.getElementById('conquest-panel');
       panel.classList.remove('conquered-flash');

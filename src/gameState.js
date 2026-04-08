@@ -1,10 +1,7 @@
 const { v4: uuidv4 } = require('uuid');
 const { getLevelUpChoices, getGameOverChoices } = require('./upgrades');
 const persistence = require('./persistence');
-<<<<<<< HEAD
-=======
 const conquest = require('./conquest');
->>>>>>> 349a50b (map integration)
 
 // XP per enemy tier
 const ENEMY_XP = { klein: 10, normal: 25, stark: 50, miniboss: 150, boss: 400 };
@@ -69,10 +66,7 @@ let emitFn = null; // set by server.js
 
 function setEmitter(fn) {
   emitFn = fn;
-<<<<<<< HEAD
-=======
   conquest.setEmitter(fn);
->>>>>>> 349a50b (map integration)
 }
 
 function emit(event, data) {
@@ -102,12 +96,8 @@ function getPublicState() {
     krogsFound: state.krogsFound,
     questsCompleted: state.questsCompleted,
     cookSuccesses: state.cookSuccesses,
-<<<<<<< HEAD
-    shrinesCompleted: state.shrinesCompleted
-=======
     shrinesCompleted: state.shrinesCompleted,
     conquest: conquest.getState()
->>>>>>> 349a50b (map integration)
   };
 }
 
@@ -120,14 +110,11 @@ function addXp(amount, source) {
     amount,
     multiplied,
     source,
+    streak: state.streak,
     streakMultiplier: getStreakInfo(state.streak).multiplier
   });
 
-<<<<<<< HEAD
-  persistence.save(state);
-=======
   persistence.save(state, conquest.getConquestRunState());
->>>>>>> 349a50b (map integration)
 
   // Check level up (may happen multiple times)
   while (state.xp >= state.xpToNextLevel) {
@@ -145,11 +132,7 @@ function addXp(amount, source) {
       teleportTickets: state.teleportTickets
     });
     emit('ticket:granted', { tickets: state.teleportTickets, delta: 1 });
-<<<<<<< HEAD
-    persistence.save(state);
-=======
     persistence.save(state, conquest.getConquestRunState());
->>>>>>> 349a50b (map integration)
   }
 
   return multiplied;
@@ -161,11 +144,7 @@ function addXpRaw(amount, source) {
   state.totalXpEarned += amount;
 
   emit('xp:gained', { amount, multiplied: amount, source, streakMultiplier: 1 });
-<<<<<<< HEAD
-  persistence.save(state);
-=======
   persistence.save(state, conquest.getConquestRunState());
->>>>>>> 349a50b (map integration)
 
   while (state.xp >= state.xpToNextLevel) {
     state.xp -= state.xpToNextLevel;
@@ -182,11 +161,7 @@ function addXpRaw(amount, source) {
       teleportTickets: state.teleportTickets
     });
     emit('ticket:granted', { tickets: state.teleportTickets, delta: 1 });
-<<<<<<< HEAD
-    persistence.save(state);
-=======
     persistence.save(state, conquest.getConquestRunState());
->>>>>>> 349a50b (map integration)
   }
 }
 
@@ -221,10 +196,7 @@ function recordKill(tier) {
   });
 
   const xpEarned = addXp(ENEMY_XP[tier], `kill:${tier}`);
-<<<<<<< HEAD
-=======
   conquest.trackKill(tier);
->>>>>>> 349a50b (map integration)
   return { xpEarned, streak: state.streak, multiplier: streakInfo.multiplier };
 }
 
@@ -238,10 +210,7 @@ function recordChest(type) {
 function recordKrog() {
   state.krogsFound += 1;
   addXpRaw(KROG_XP, 'krog');
-<<<<<<< HEAD
-=======
   conquest.trackKrog();
->>>>>>> 349a50b (map integration)
   return { xpEarned: KROG_XP };
 }
 
@@ -262,11 +231,7 @@ function startShrine() {
   state.shrineActive = true;
   state.shrineStartedAt = Date.now();
   emit('shrine:start', { startedAt: state.shrineStartedAt });
-<<<<<<< HEAD
-  persistence.save(state);
-=======
   persistence.save(state, conquest.getConquestRunState());
->>>>>>> 349a50b (map integration)
   return { startedAt: state.shrineStartedAt };
 }
 
@@ -290,11 +255,7 @@ function triggerGameOver() {
   state.xp = 0;
   const choices = getGameOverChoices(state.ownedUpgrades);
   state.pendingGameOverChoices = choices;
-<<<<<<< HEAD
-  persistence.save(state);
-=======
   persistence.save(state, conquest.getConquestRunState());
->>>>>>> 349a50b (map integration)
   emit('gameover:start', { choices, xpReset: true });
   return { choices };
 }
@@ -315,11 +276,7 @@ function chooseLevelUpUpgrade(upgradeId) {
 
   state.pendingLevelUpChoices = [];
   emit('level:choiceMade', { chosenId: upgradeId, newOwnedUpgrades: state.ownedUpgrades });
-<<<<<<< HEAD
-  persistence.save(state);
-=======
   persistence.save(state, conquest.getConquestRunState());
->>>>>>> 349a50b (map integration)
   return { chosenId: upgradeId };
 }
 
@@ -330,11 +287,7 @@ function chooseGameOverRemoval(upgradeId) {
   state.ownedUpgrades = state.ownedUpgrades.filter(id => id !== upgradeId);
   state.pendingGameOverChoices = [];
   emit('gameover:choiceMade', { removedId: upgradeId, remainingUpgrades: state.ownedUpgrades });
-<<<<<<< HEAD
-  persistence.save(state);
-=======
   persistence.save(state, conquest.getConquestRunState());
->>>>>>> 349a50b (map integration)
   return { removedId: upgradeId };
 }
 
@@ -342,16 +295,6 @@ function useTicket() {
   if (state.teleportTickets <= 0) return null;
   state.teleportTickets -= 1;
   emit('ticket:used', { tickets: state.teleportTickets });
-<<<<<<< HEAD
-  persistence.save(state);
-  return { tickets: state.teleportTickets };
-}
-
-function resetRun() {
-  if (state.streakTimerHandle) clearTimeout(state.streakTimerHandle);
-  state = freshState();
-  persistence.save(state);
-=======
   persistence.save(state, conquest.getConquestRunState());
   return { tickets: state.teleportTickets };
 }
@@ -365,7 +308,6 @@ function resetRun() {
   state = freshState();
   conquest.onRunReset();
   persistence.save(state, conquest.getConquestRunState());
->>>>>>> 349a50b (map integration)
   emit('run:reset', { newRunId: state.runId });
   emit('state:full', getPublicState());
 }
@@ -376,23 +318,17 @@ function loadSavedState() {
     state = {
       ...freshState(),
       ...saved,
-<<<<<<< HEAD
-=======
       // Beim Start immer zurücksetzen
       streak: 0,
       shrineActive: false,
       shrineStartedAt: null,
->>>>>>> 349a50b (map integration)
       streakTimerHandle: null,
       pendingLevelUpChoices: [],
       pendingGameOverChoices: []
     };
-<<<<<<< HEAD
-=======
     conquest.loadConquestRunState(saved.conquest);
   } else {
     conquest.onRunReset();
->>>>>>> 349a50b (map integration)
   }
 }
 
@@ -411,10 +347,6 @@ module.exports = {
   chooseLevelUpUpgrade,
   chooseGameOverRemoval,
   useTicket,
-<<<<<<< HEAD
-  resetRun
-=======
   resetRun,
   awardConquestXp
->>>>>>> 349a50b (map integration)
 };

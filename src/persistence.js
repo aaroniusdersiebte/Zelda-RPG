@@ -14,11 +14,7 @@ function load() {
   }
 }
 
-<<<<<<< HEAD
-function save(state) {
-=======
 function save(state, conquestRunState) {
->>>>>>> 349a50b (map integration)
   clearTimeout(debounceTimer);
   debounceTimer = setTimeout(() => {
     const serializable = { ...state };
@@ -27,13 +23,10 @@ function save(state, conquestRunState) {
     delete serializable.pendingLevelUpChoices;
     delete serializable.pendingGameOverChoices;
 
-<<<<<<< HEAD
-=======
     if (conquestRunState !== undefined) {
       serializable.conquest = conquestRunState;
     }
 
->>>>>>> 349a50b (map integration)
     fs.mkdirSync(path.dirname(DATA_PATH), { recursive: true });
     fs.writeFile(DATA_PATH, JSON.stringify(serializable, null, 2), () => {});
   }, 300);

@@ -8,13 +8,8 @@ app.whenReady().then(async () => {
   await startServer(PORT);
 
   mainWindow = new BrowserWindow({
-<<<<<<< HEAD
-    width: 1200,
-    height: 800,
-=======
-    width: 1440,
-    height: 900,
->>>>>>> 349a50b (map integration)
+    width: 1920,
+    height: 1080,
     backgroundColor: '#0d0d14',
     webPreferences: {
       nodeIntegration: false,
@@ -28,11 +23,7 @@ app.whenReady().then(async () => {
 
   app.on('activate', () => {
     if (BrowserWindow.getAllWindows().length === 0) {
-<<<<<<< HEAD
-      mainWindow = new BrowserWindow({ width: 1200, height: 800 });
-=======
-      mainWindow = new BrowserWindow({ width: 1440, height: 900 });
->>>>>>> 349a50b (map integration)
+      mainWindow = new BrowserWindow({ width: 1920, height: 1080 });
       mainWindow.loadURL(`http://localhost:${PORT}/ui`);
     }
   });

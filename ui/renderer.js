@@ -1,17 +1,10 @@
 const socket = io();
 
-<<<<<<< HEAD
-// DOM refs
-const levelNum       = document.getElementById('level-number');
-const xpFill         = document.getElementById('xp-bar-fill');
-const xpNumbers      = document.getElementById('xp-numbers');
-=======
 // DOM refs — XP in persistentem Header
 const levelNum       = document.getElementById('xp-level-number');
 const xpFill         = document.getElementById('xp-bar-fill');
 const xpNumbers      = document.getElementById('xp-numbers');
 const ticketsMini    = document.getElementById('xp-tickets-count');
->>>>>>> 349a50b (map integration)
 const upgradesGrid   = document.getElementById('upgrades-grid');
 const noUpgrades     = document.getElementById('no-upgrades');
 const streakDisplay  = document.getElementById('streak-display');
@@ -49,10 +42,7 @@ function renderState(s) {
   xpFill.style.width = pct + '%';
   xpNumbers.textContent = `${s.xp} / ${s.xpToNextLevel} XP`;
   ticketsCount.textContent = s.teleportTickets;
-<<<<<<< HEAD
-=======
   if (ticketsMini) ticketsMini.textContent = s.teleportTickets;
->>>>>>> 349a50b (map integration)
   renderUpgrades(s.ownedUpgrades);
   renderStreak(s.streak, s.streakMultiplier, s.streakLabel);
 
@@ -271,14 +261,6 @@ btnReset.addEventListener('click', () => {
 });
 
 // ── Socket Events ─────────────────────────────────────────────
-<<<<<<< HEAD
-socket.on('state:full', renderState);
-
-socket.on('level:up', ({ newLevel, choices }) => {
-  levelNum.classList.remove('level-up-anim');
-  void levelNum.offsetWidth;
-  levelNum.classList.add('level-up-anim');
-=======
 let mapInitialized = false;
 socket.on('state:full', (s) => {
   renderState(s);
@@ -293,12 +275,13 @@ socket.on('state:full', (s) => {
 });
 
 socket.on('level:up', ({ newLevel, choices }) => {
->>>>>>> 349a50b (map integration)
   levelNum.textContent = newLevel;
 
   xpFill.classList.remove('level-up-flash');
   void xpFill.offsetWidth;
   xpFill.classList.add('level-up-flash');
+
+  window.sfx?.levelUp();
 
   if (choices && choices.length > 0) {
     showLevelUpModal(choices);
@@ -308,6 +291,7 @@ socket.on('level:up', ({ newLevel, choices }) => {
 socket.on('streak:update', ({ streak, multiplier, label }) => {
   renderStreak(streak, multiplier, label);
   statKills.textContent = parseInt(statKills.textContent || 0) + 1;
+  window.sfx?.streakUp(streak);
 });
 
 socket.on('streak:reset', () => {
@@ -315,15 +299,21 @@ socket.on('streak:reset', () => {
   streakCount.textContent = '0';
   streakFlame.style.transform = 'scale(1)';
   streakFlame.style.filter = 'none';
+  window.sfx?.streakReset();
 });
 
-socket.on('shrine:start', ({ startedAt }) => startShrineDisplay(startedAt));
+socket.on('shrine:start', ({ startedAt }) => {
+  startShrineDisplay(startedAt);
+  window.sfx?.shrineStart();
+});
 socket.on('shrine:end', ({ bonusXp, totalXp }) => {
   stopShrineDisplay();
   statShrines.textContent = parseInt(statShrines.textContent || 0) + 1;
+  window.sfx?.shrineEnd();
 });
 
 socket.on('gameover:start', ({ choices }) => {
+  window.sfx?.gameOver();
   showGameOverModal(choices);
   // Drain XP bar
   xpFill.style.transition = 'width 800ms ease-in';
@@ -333,16 +323,13 @@ socket.on('gameover:start', ({ choices }) => {
   });
 });
 
-<<<<<<< HEAD
-socket.on('ticket:granted', ({ tickets }) => { ticketsCount.textContent = tickets; });
-=======
 socket.on('ticket:granted', ({ tickets }) => {
   ticketsCount.textContent = tickets;
   if (ticketsMini) ticketsMini.textContent = tickets;
 });
->>>>>>> 349a50b (map integration)
 
-socket.on('xp:gained', () => {
+socket.on('xp:gained', ({ streak } = {}) => {
+  window.sfx?.xpGain(streak ?? 0);
   // Refresh XP bar from state
   fetch('/api/state').then(r => r.json()).then(s => {
     const pct = s.xpToNextLevel > 0 ? (s.xp / s.xpToNextLevel * 100).toFixed(1) : 100;
@@ -364,4 +351,5 @@ socket.on('run:reset', () => {
   stopShrineDisplay();
   levelupModal.classList.remove('active');
   gameoverModal.classList.remove('active');
+  window.sfx?.runReset();
 });

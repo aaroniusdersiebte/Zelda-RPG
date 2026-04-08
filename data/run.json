@@ -1,80 +1,261 @@
 {
-  "runId": "e3ea0c08-a5a2-462b-9590-b83f5616a4b1",
-  "startedAt": 1774267418021,
-  "level": 10,
-<<<<<<< HEAD
-  "xp": 319,
-  "xpToNextLevel": 515,
-  "totalXpEarned": 2395,
-=======
-  "xp": 334,
-  "xpToNextLevel": 515,
-  "totalXpEarned": 2410,
->>>>>>> 349a50b (map integration)
-  "streak": 10,
-  "lastKillAt": 1774434968267,
-  "shrineActive": true,
-  "shrineStartedAt": 1774434964889,
-  "teleportTickets": 9,
+  "runId": "2a8589f5-8892-47a3-9e6d-7cc8c152fd22",
+  "startedAt": 1775646381772,
+  "level": 2,
+  "xp": 18,
+  "xpToNextLevel": 120,
+  "totalXpEarned": 118,
+  "streak": 6,
+  "lastKillAt": 1775646430393,
+  "shrineActive": false,
+  "shrineStartedAt": null,
+  "teleportTickets": 1,
   "ownedUpgrades": [
-    "ultrahand",
-    "zonai-bauteile",
-    "deckensprung",
-    "ruestung-kopf",
-    "ruestung-torso",
-    "arrow-fuse",
-    "ruestung-hose"
+    "zeitumkehr"
   ],
   "kills": {
-    "klein": 25,
-    "normal": 16,
-    "stark": 1,
-    "miniboss": 1,
+    "klein": 5,
+    "normal": 1,
+    "stark": 0,
+    "miniboss": 0,
     "boss": 0
   },
-  "chestsOpened": 3,
-<<<<<<< HEAD
-  "krogsFound": 1,
-  "questsCompleted": 2,
+  "chestsOpened": 0,
+  "krogsFound": 0,
+  "questsCompleted": 0,
   "cookSuccesses": 0,
-  "shrinesCompleted": 2
-=======
-  "krogsFound": 2,
-  "questsCompleted": 2,
-  "cookSuccesses": 0,
-  "shrinesCompleted": 2,
+  "shrinesCompleted": 0,
   "conquest": {
-    "activeRegionId": "8cbeeea4-b13d-423e-85e0-c9c9c5856112",
+    "activeRegionId": "f24f0196-1219-4155-82ac-cc30d1b7449b",
     "regions": {
-      "8cbeeea4-b13d-423e-85e0-c9c9c5856112": {
+      "f24f0196-1219-4155-82ac-cc30d1b7449b": {
         "roll": {
           "shrineIds": [
-            "shrine_dungeon136",
-            "shrine_dungeon123"
+            "shrine_dungeon029",
+            "shrine_dungeon020",
+            "shrine_dungeon010",
+            "shrine_dungeon123",
+            "shrine_dungeon142"
           ],
           "killRequirements": {
-            "miniboss": 16,
-            "klein": 18
+            "klein": 17,
+            "normal": 10,
+            "stark": 11
           },
           "towerId": "Tower01",
+          "towerRequired": true,
+          "korokRequired": 4
+        },
+        "progress": {
+          "shrinesDone": [],
+          "killsDone": {
+            "klein": 5,
+            "normal": 1,
+            "stark": 0
+          },
+          "towerDone": false,
+          "koroksDone": 0
+        },
+        "conquered": false
+      },
+      "40aabc7d-8ece-42a2-b126-36bd8213ed40": {
+        "roll": {
+          "shrineIds": [
+            "shrine_dungeon102",
+            "shrine_dungeon064",
+            "shrine_dungeon002"
+          ],
+          "killRequirements": {
+            "klein": 8,
+            "normal": 11,
+            "stark": 5
+          },
+          "towerId": "Tower04",
+          "towerRequired": true,
+          "korokRequired": 4
+        },
+        "progress": {
+          "shrinesDone": [],
+          "killsDone": {
+            "klein": 0,
+            "normal": 0,
+            "stark": 0
+          },
+          "towerDone": false,
+          "koroksDone": 0
+        },
+        "conquered": false
+      },
+      "1ffc1dcd-d0e0-4a29-816c-ab72111764ad": {
+        "roll": {
+          "shrineIds": [
+            "shrine_dungeon001",
+            "shrine_dungeon099"
+          ],
+          "killRequirements": {
+            "klein": 5,
+            "normal": 20,
+            "stark": 6,
+            "miniboss": 1
+          },
+          "towerId": "Tower05",
+          "towerRequired": true,
+          "korokRequired": 4
+        },
+        "progress": {
+          "shrinesDone": [],
+          "killsDone": {
+            "klein": 0,
+            "normal": 0,
+            "stark": 0,
+            "miniboss": 0
+          },
+          "towerDone": false,
+          "koroksDone": 0
+        },
+        "conquered": false
+      },
+      "fcb13a06-ec8e-4144-bd74-234f3e4eda63": {
+        "roll": {
+          "shrineIds": [
+            "shrine_dungeon150",
+            "shrine_dungeon107",
+            "shrine_dungeon071"
+          ],
+          "killRequirements": {
+            "klein": 15,
+            "normal": 12,
+            "stark": 10
+          },
+          "towerId": "Tower11",
+          "towerRequired": true,
+          "korokRequired": 4
+        },
+        "progress": {
+          "shrinesDone": [],
+          "killsDone": {
+            "klein": 0,
+            "normal": 0,
+            "stark": 0
+          },
+          "towerDone": false,
+          "koroksDone": 0
+        },
+        "conquered": false
+      },
+      "b37296f3-ead5-42b0-ad7e-039ea8114fa5": {
+        "roll": {
+          "shrineIds": [
+            "shrine_dungeon112",
+            "shrine_dungeon127",
+            "shrine_dungeon130"
+          ],
+          "killRequirements": {
+            "klein": 7,
+            "normal": 11,
+            "stark": 6
+          },
+          "towerId": "Tower06",
           "towerRequired": true,
           "korokRequired": 1
         },
         "progress": {
-          "shrinesDone": [
-            "shrine_dungeon136",
-            "shrine_dungeon123"
-          ],
+          "shrinesDone": [],
           "killsDone": {
-            "miniboss": 0,
-            "klein": 0
+            "klein": 0,
+            "normal": 0,
+            "stark": 0
           },
-          "towerDone": true,
-          "koroksDone": 1
+          "towerDone": false,
+          "koroksDone": 0
+        },
+        "conquered": false
+      },
+      "550aba51-35c3-4430-a447-36d26f883d17": {
+        "roll": {
+          "shrineIds": [
+            "shrine_dungeon049",
+            "shrine_dungeon119",
+            "shrine_dungeon011",
+            "shrine_dungeon081",
+            "shrine_dungeon113"
+          ],
+          "killRequirements": {
+            "klein": 14,
+            "normal": 9,
+            "stark": 19
+          },
+          "towerId": "Tower14",
+          "towerRequired": true,
+          "korokRequired": 1
+        },
+        "progress": {
+          "shrinesDone": [],
+          "killsDone": {
+            "klein": 0,
+            "normal": 0,
+            "stark": 0
+          },
+          "towerDone": false,
+          "koroksDone": 0
+        },
+        "conquered": false
+      },
+      "0237c616-99aa-4e3d-9992-36be9dabf3e5": {
+        "roll": {
+          "shrineIds": [
+            "shrine_dungeon024",
+            "shrine_dungeon140"
+          ],
+          "killRequirements": {
+            "klein": 8,
+            "normal": 15,
+            "stark": 7
+          },
+          "towerId": "Tower09",
+          "towerRequired": true,
+          "korokRequired": 5
+        },
+        "progress": {
+          "shrinesDone": [],
+          "killsDone": {
+            "klein": 0,
+            "normal": 0,
+            "stark": 0
+          },
+          "towerDone": false,
+          "koroksDone": 0
+        },
+        "conquered": false
+      },
+      "d3168f98-0dda-4403-9238-202d868c4bad": {
+        "roll": {
+          "shrineIds": [
+            "shrine_dungeon038",
+            "shrine_dungeon014",
+            "shrine_dungeon067"
+          ],
+          "killRequirements": {
+            "klein": 11,
+            "normal": 8,
+            "stark": 8
+          },
+          "towerId": "Tower15",
+          "towerRequired": true,
+          "korokRequired": 5
+        },
+        "progress": {
+          "shrinesDone": [],
+          "killsDone": {
+            "klein": 0,
+            "normal": 0,
+            "stark": 0
+          },
+          "towerDone": false,
+          "koroksDone": 0
         },
         "conquered": false
       }
     }
   }
->>>>>>> 349a50b (map integration)
 }
